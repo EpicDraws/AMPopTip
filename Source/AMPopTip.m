@@ -459,8 +459,8 @@
 
     BOOL isActive = YES;
 #ifndef AM_POPTIP_EXTENSION
-    UIApplicationState state = [[UIApplication sharedApplication] applicationState];
-    isActive = (state == UIApplicationStateActive);
+    // UIApplicationState state = [[UIApplication sharedApplication] applicationState];
+    // isActive = (state == UIApplicationStateActive);
 #endif
     if (!isActive) {
         completion();
